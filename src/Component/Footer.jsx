@@ -33,7 +33,13 @@ const Footer = () => {
           <p>Email: <a href="mailto:shivaji.pawar@gagangirirubber.com" style={{textDecoration:"none"}}>shivaji.pawar@gagangirirubber.com</a></p>
           <p>Phone: +91 81697 45760</p>
           <p>GST Id:27BKEPP6242C1ZA</p>
-          <p>Address: PLOT NO-22 SARVE NO-109 ADARSH NAGAR VALAP, Near HINDALCO COMPANY, Taloja, Navi Mumbai, Maharashtra 410208</p>
+          {/* <p>Address: PLOT NO-22 SARVE NO-109 ADARSH NAGAR VALAP, Near HINDALCO COMPANY, Taloja, Navi Mumbai, Maharashtra 410208</p> */}
+          <p>
+            Address: 
+            <a href="https://www.google.com/maps/place/GAGANGIRI+RUBBER+WORKS/@19.0632649,73.1298912,17z/data=!4m14!1m7!3m6!1s0x3be7eb60d00e54bd:0xa846131f5876ac84!2sGAGANGIRI+RUBBER+WORKS!8m2!3d19.0632649!4d73.1298912!16s%2Fg%2F11lpxhnc52!3m5!1s0x3be7eb60d00e54bd:0xa846131f5876ac84!8m2!3d19.0632649!4d73.1298912!16s%2Fg%2F11lpxhnc52?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D" >
+              PLOT NO-22 SARVE NO-109 ADARSH NAGAR VALAP, Near HINDALCO COMPANY, Taloja, Navi Mumbai, Maharashtra 410208
+            </a>
+          </p>
         </div>
 
         {/* Social Media */}

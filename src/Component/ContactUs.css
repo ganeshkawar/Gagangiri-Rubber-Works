@@ -1,0 +1,164 @@
+/* Container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Contact Content */
+  .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact Form Box */
+  .contact-box {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  /* Contact Title */
+  .contact-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mb-4 {
+    margin-bottom: 16px;
+  }
+  
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Submit Button */
+  .contact-button {
+    background-color: #ff6600;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: 2px solid white;
+   
+  }
+  
+  .contact-button:hover {
+    background-color: #cc5500;
+  }
+  
+  /* Image Section */
+  .contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* === RESPONSIVE DESIGN === */
+  
+  /* Tablets (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .contact-content {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .contact-box {
+      padding-right: 0;
+    }
+  
+    .contact-image {
+      margin-top: 20px;
+      border: 2px solid white;
+    }
+  }
+  
+  /* Mobile Devices (max-width: 768px) */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 15px;
+    }
+  
+    .contact-content {
+      padding: 15px;
+      width: 95%;
+    }
+  
+    .contact-title {
+      font-size: 1.8rem;
+    }
+  
+    input {
+      font-size: 0.95rem;
+    }
+  
+    .contact-button {
+      font-size: 1rem;
+      padding: 8px;
+      border: 2px solid white;
+    }
+  }
+  
+  /* Small Screens (max-width: 480px) */
+  @media (max-width: 480px) {
+    .contact-container {
+      padding: 10px;
+    }
+  
+    .contact-content {
+      padding: 10px;
+      width: 100%;
+    }
+  
+    .contact-title {
+      font-size: 1.6rem;
+    }
+  
+    input {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .contact-button {
+      font-size: 0.9rem;
+      padding: 7px;
+      border: 2px solid white;
+    }
+  }
+  

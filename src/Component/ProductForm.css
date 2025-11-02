@@ -1,0 +1,133 @@
+/* Product Form Container */
+.product-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Title */
+  .product-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  /* Form Layout */
+  .product-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Labels */
+  .product-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Input Fields */
+  .product-form input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+    margin-top: 15px;
+  }
+  
+  /* Buttons */
+  .product-form button {
+    flex: 1; /* Make buttons flexible */
+    margin: 5px;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+  }
+  
+  /* Button Hover Effect */
+  .product-form button:hover {
+    background: #0056b3;
+  }
+  
+  /* Admin Dashboard Button */
+  .dashboard-button {
+    background: #28a745 !important;
+  }
+  
+  .dashboard-button:hover {
+    background: #218838 !important;
+  }
+  
+  /* --- RESPONSIVE DESIGN --- */
+  
+  /* Tablets and Smaller Screens */
+  @media (max-width: 768px) {
+    .product-form {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .product-form h2 {
+      font-size: 20px;
+    }
+  
+    .product-form input {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .button-container {
+      flex-direction: column; /* Stack buttons on smaller screens */
+      align-items: center;
+    }
+  
+    .product-form button {
+      width: 100%;
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  /* Mobile Devices */
+  @media (max-width: 480px) {
+    .product-form {
+      max-width: 95%;
+      padding: 10px;
+    }
+  
+    .product-form h2 {
+      font-size: 18px;
+    }
+  
+    .product-form label {
+      font-size: 13px;
+    }
+  
+    .product-form input {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .product-form button {
+      font-size: 14px;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+  

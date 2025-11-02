@@ -1,0 +1,135 @@
+/* Default Styling - Desktop */
+.about-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 90%;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Title */
+.about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Description */
+.about-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Subtitle */
+.about-subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 30px 0 20px;
+    color: #ff8a00;
+}
+
+/* Product List */
+.about-list {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.about-list-item {
+    font-weight: 700;
+    color: #e52e71;
+}
+
+.about-list li::before {
+    content: "✔";
+    color: #ff8a00;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+/* Footer Text */
+.about-footer {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.about-footer-bold {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #ff8a00;
+}
+
+/* --------------------------- Responsive Design --------------------------- */
+
+@media (max-width: 1200px) {
+    .about-content {
+        width: 85%;
+        padding: 35px;
+    }
+    .about-title { font-size: 2.8rem; }
+    .about-description, .about-footer, .about-footer-bold { font-size: 1.1rem; }
+    .about-subtitle { font-size: 1.8rem; }
+    .about-list li { font-size: 1rem; }
+}
+
+@media (max-width: 992px) {
+    .about-container { padding: 40px 15px; }
+    .about-title { font-size: 2.5rem; }
+    .about-description { font-size: 1rem; line-height: 1.5; }
+    .about-subtitle { font-size: 1.6rem; }
+    .about-list li { font-size: 0.95rem; flex-wrap: wrap; }
+    .about-footer, .about-footer-bold { font-size: 1rem; }
+}
+
+@media (max-width: 768px) {
+    .about-content { width: 95%; padding: 30px; }
+    .about-title { font-size: 2.2rem; }
+    .about-description { font-size: 1rem; }
+    .about-subtitle { font-size: 1.5rem; }
+    .about-list li { font-size: 0.9rem; }
+    .about-footer, .about-footer-bold { font-size: 0.95rem; }
+}
+
+@media (max-width: 480px) {
+    .about-container { padding: 30px 10px; }
+    .about-content { width: 100%; padding: 20px; }
+    .about-title { font-size: 1.8rem; }
+    .about-subtitle { font-size: 1.4rem; }
+    .about-description { font-size: 0.95rem; }
+    .about-list li { font-size: 0.85rem; flex-wrap: wrap; }
+    .about-footer, .about-footer-bold { font-size: 0.9rem; }
+}
+
+@media (max-width: 360px) {
+    .about-title { font-size: 1.6rem; }
+    .about-subtitle { font-size: 1.3rem; }
+    .about-description { font-size: 0.9rem; }
+    .about-list li { font-size: 0.8rem; }
+    .about-footer, .about-footer-bold { font-size: 0.85rem; }
+}

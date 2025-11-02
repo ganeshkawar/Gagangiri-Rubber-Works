@@ -1,0 +1,154 @@
+/* Container Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Box to Hold Form and Image */
+  .login-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 850px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Form Styling */
+  .login-form {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+  
+  .login-button {
+    background-color: #ff6600;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    border: 2px solid white;
+  }
+  
+  .login-button:hover {
+    background-color: #cc5500;
+  }
+  
+  /* Image Styling */
+  .login-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .login-box {
+      max-width: 700px;
+      padding: 25px;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    input {
+      font-size: 0.9rem;
+    }
+  
+    .login-button {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .login-box {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .login-form {
+      padding-right: 0;
+      width: 100%;
+    }
+  
+    .login-image {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .login-image img {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-box {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    input {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .login-button {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  
+    .login-image img {
+      width: 100%;
+    }
+  }
+  

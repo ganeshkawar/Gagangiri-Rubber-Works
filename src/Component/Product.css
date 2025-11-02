@@ -1,0 +1,119 @@
+.products {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+    /* border: 2px solid white; */
+    margin-bottom: 50%;
+  }
+  
+  /* Card Container */
+  .card-container {
+    width: 100%;
+    max-width: 250px; /* Adjusts for different screens */
+  }
+  
+  /* Material UI Card */
+  .MuiCard-root {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Card Hover Effect */
+  .MuiCard-root:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Image */
+  .MuiCardMedia-root {
+    height: 140px ;
+    object-fit: contain;
+  }
+  
+  /* Card Content */
+  .MuiCardContent-root {
+    padding: 10px ;
+  }
+  
+  /* Typography */
+  .MuiTypography-h5 {
+    font-size: 16px ;
+    font-weight: bold;
+  }
+  
+  /* Button */
+  .MuiButton-root {
+    font-size: 14px ;
+    padding: 6px 12px ;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) { 
+    .products {
+        gap: 10px;
+        padding: 15px;
+    }
+    .card-container {
+        max-width: 220px;
+    }
+    .MuiCardMedia-root {
+        height: 120px ;
+    }
+    .MuiTypography-h5 {
+        font-size: 14px ;
+    }
+    .MuiButton-root {
+        font-size: 12px ;
+        padding: 5px 10px ;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-container {
+        max-width: 100%;
+    }
+    .MuiCard-root {
+        max-width: 300px;
+    }
+    .MuiCardMedia-root {
+        height: 110px !important;
+    }
+    .MuiTypography-h5 {
+        font-size: 13px !important;
+    }
+    .MuiButton-root {
+        font-size: 11px !important;
+        padding: 4px 8px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .products {
+        padding: 10px;
+    }
+    .card-container {
+        max-width: 95%;
+    }
+    .MuiCard-root {
+        max-width: 280px;
+    }
+    .MuiCardMedia-root {
+        height: 100px !important;
+    }
+    .MuiTypography-h5 {
+        font-size: 12px !important;
+    }
+    .MuiButton-root {
+        font-size: 10px !important;
+        padding: 3px 6px !important;
+    }
+  }
+  
